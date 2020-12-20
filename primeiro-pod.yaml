@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: teste1
+  labels:
+    app: primeiro-pod
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:stable
+      ports:
+        - containerPort: 80
